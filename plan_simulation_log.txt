@@ -1,0 +1,135 @@
+=== Initial State ===
+The blue block is placed on top of the table.
+The blue block is empty on top.
+The red block is placed on top of the table.
+The red block is empty on top.
+The yellow block is placed on top of the table.
+The yellow block is not empty on top.
+The purple block is placed on top of the yellow block.
+The purple block is empty on top.
+The blue bowl is placed on top of the table.
+The blue bowl is empty on top.
+The red bowl is placed on top of the table.
+The red bowl is empty on top.
+The yellow bowl is placed on top of the table.
+The yellow bowl is empty on top.
+The purple bowl is placed on top of the table.
+The purple bowl is empty on top.
+
+=== User Instruction ===
+Find the matching color block for each bowl and place it inside.
+
+=== Found Object ===
+objects = ['blue block', 'red block', 'yellow block', 'purple block', 'blue bowl', 'red bowl', 'yellow bowl', 'purple bowl']
+
+--- apack 1 ---
+<apack>
+    <precondition>The purple block is empty on top.</precondition>
+    <precondition>The purple bowl is empty on top.</precondition>
+    <action>robot.pick_and_place("purple block", "purple bowl")</action>
+    <postcondition>The purple block is placed on top of the purple bowl.</postcondition>
+    <postcondition>The purple bowl is not empty on top.</postcondition>
+</apack>
+
+Feasible: True | Reason: OK
+Current State:
+The blue block is placed on top of the table.
+The blue block is empty on top.
+The red block is placed on top of the table.
+The red block is empty on top.
+The yellow block is placed on top of the table.
+The yellow block is empty on top.
+The blue bowl is placed on top of the table.
+The blue bowl is empty on top.
+The red bowl is placed on top of the table.
+The red bowl is empty on top.
+The yellow bowl is placed on top of the table.
+The yellow bowl is empty on top.
+The purple bowl is placed on top of the table.
+The purple bowl is not empty on top.
+The purple block is placed on top of the purple bowl.
+The purple block is empty on top.
+
+--- apack 2 ---
+<apack>
+    <precondition>The blue block is empty on top.</precondition>
+    <precondition>The blue bowl is empty on top.</precondition>
+    <action>robot.pick_and_place("blue block", "blue bowl")</action>
+    <postcondition>The blue block is placed on top of the blue bowl.</postcondition>
+    <postcondition>The blue bowl is not empty on top.</postcondition>
+</apack>
+
+Feasible: True | Reason: OK
+Current State:
+The red block is placed on top of the table.
+The red block is empty on top.
+The yellow block is placed on top of the table.
+The yellow block is empty on top.
+The blue bowl is placed on top of the table.
+The blue bowl is not empty on top.
+The red bowl is placed on top of the table.
+The red bowl is empty on top.
+The yellow bowl is placed on top of the table.
+The yellow bowl is empty on top.
+The purple bowl is placed on top of the table.
+The purple bowl is not empty on top.
+The purple block is placed on top of the purple bowl.
+The purple block is empty on top.
+The blue block is placed on top of the blue bowl.
+The blue block is empty on top.
+
+--- apack 3 ---
+<apack>
+    <precondition>The yellow block is empty on top.</precondition>
+    <precondition>The yellow bowl is empty on top.</precondition>
+    <action>robot.pick_and_place("yellow block", "yellow bowl")</action>
+    <postcondition>The yellow block is placed on top of the yellow bowl.</postcondition>
+    <postcondition>The yellow bowl is not empty on top.</postcondition>
+</apack>
+
+Feasible: True | Reason: OK
+Current State:
+The red block is placed on top of the table.
+The red block is empty on top.
+The blue bowl is placed on top of the table.
+The blue bowl is not empty on top.
+The red bowl is placed on top of the table.
+The red bowl is empty on top.
+The yellow bowl is placed on top of the table.
+The yellow bowl is not empty on top.
+The purple bowl is placed on top of the table.
+The purple bowl is not empty on top.
+The purple block is placed on top of the purple bowl.
+The purple block is empty on top.
+The blue block is placed on top of the blue bowl.
+The blue block is empty on top.
+The yellow block is placed on top of the yellow bowl.
+The yellow block is empty on top.
+
+--- apack 4 ---
+<apack>
+    <precondition>The red block is empty on top.</precondition>
+    <precondition>The red bowl is empty on top.</precondition>
+    <action>robot.pick_and_place("red block", "red bowl")</action>
+    <postcondition>The red block is placed on top of the red bowl.</postcondition>
+    <postcondition>The red bowl is not empty on top.</postcondition>
+</apack>
+
+Feasible: True | Reason: OK
+Current State:
+The blue bowl is placed on top of the table.
+The blue bowl is not empty on top.
+The red bowl is placed on top of the table.
+The red bowl is not empty on top.
+The yellow bowl is placed on top of the table.
+The yellow bowl is not empty on top.
+The purple bowl is placed on top of the table.
+The purple bowl is not empty on top.
+The purple block is placed on top of the purple bowl.
+The purple block is empty on top.
+The blue block is placed on top of the blue bowl.
+The blue block is empty on top.
+The yellow block is placed on top of the yellow bowl.
+The yellow block is empty on top.
+The red block is placed on top of the red bowl.
+The red block is empty on top.
