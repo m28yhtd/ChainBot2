@@ -1,0 +1,8 @@
+{
+  "pick": ["red block", "blue block"],
+  "place": ["red bowl", "blue bowl"],
+  "positions": {
+    "blue block": [-0.1, -0.5, 0.025],
+    "red block": {"on":  "blue block", "z_offset":  0.025}
+  }
+}

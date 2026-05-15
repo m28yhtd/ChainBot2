@@ -1,0 +1,18 @@
+{
+  "pick": ["orange block", "brown block", "red block", "yellow block", "blue block", "gray block", "purple block", "green block", "pink block", "cyan block"],
+  "place": ["blue bowl", "red bowl", "purple bowl", "brown bowl", "yellow bowl"],
+  "positions": {
+    "orange block": "bottom right corner",
+    "brown block": {"on":  "orange block", "z_offset":  0.025},
+    "yellow block": "bottom left corner",
+    "gray block": "left side",
+    "green block": {"on":  "gray block", "z_offset":  0.025},
+    "pink block": {"on":  "green block", "z_offset":  0.025},
+    "blue bowl": "bottom side",
+    "brown bowl": "top right corner",
+    "purple block": {"inside":  "brown bowl", "z_offset":  0.02},
+    "blue block": {"inside":  "blue bowl", "z_offset":  0.02},
+    "red bowl": "top left corner",
+    "purple bowl": "right side"
+  }
+}

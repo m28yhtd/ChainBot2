@@ -1,0 +1,8 @@
+{
+  "pick": ["blue block", "red block", "purple block", "yellow block"],
+  "place": ["red bowl", "blue bowl"],
+  "positions": {
+    "blue bowl": [-0.15, -0.7, 0.025],
+    "red bowl": [0.15, -0.7, 0.025]
+  }
+}
