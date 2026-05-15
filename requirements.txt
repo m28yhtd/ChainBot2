@@ -1,0 +1,53 @@
+# Streamlit 및 호환 라이브러리
+streamlit==1.18.0
+altair==4.2.2
+wrapt==1.14.1
+
+# PyTorch + CUDA 11.7
+torch==1.13.0+cu117
+torchvision==0.14.0+cu117
+torchaudio==0.13.0
+--extra-index-url https://download.pytorch.org/whl/cu117
+
+# 필수 유틸
+ftfy==6.1.1
+regex
+tqdm
+easydict==1.10
+matplotlib==3.7.2
+IPython
+gdown==4.7.1
+typing-extensions==4.4.0
+pyautogui
+pillow==9.2.0
+imageio==2.9.0
+imageio-ffmpeg==0.4.7
+moviepy==1.0.3
+opencv-python==4.8.0.76
+pybullet
+
+# JAX/FLAX/OPTAX (Windows에서는 wheel만 설치 가능)
+# 아래 명령은 pip에서 직접 실행해야 함 (requirements.txt에서 인식 불가)
+# pip install jax==0.3.25 jaxlib==0.3.25+cuda11.cudnn82 --find-links https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
+
+flax==0.5.1
+optax==0.2.4
+
+# OpenAI 및 LangChain
+openai==0.27.8
+langchain==0.1.16
+
+# TensorFlow 및 충돌 방지 버전
+tensorflow==2.13.0
+protobuf==3.20.3
+watchdog<3.0
+
+# 기타
+scipy==1.11.2
+numpy==1.24.2
+pydantic==1.10.12
+pyyaml==6.0
+filetype
+
+# OpenAI CLIP (직접 설치 필요)
+# pip install git+https://github.com/openai/CLIP.git@a1d071733d7111c9c014f024669f959182114e33
