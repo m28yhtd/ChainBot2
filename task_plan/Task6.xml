@@ -1,0 +1,39 @@
+<plan>
+    <sequence>
+        <apack>
+            <precondition>The red block is empty on top.</precondition>
+            <precondition>The red bowl is empty on top.</precondition>
+            <action>robot.pick_and_place("red block", "red bowl")</action>
+            <postcondition>The red block is placed on top of the red bowl.</postcondition>
+            <postcondition>The red bowl is not empty on top.</postcondition>
+        </apack>
+        <apack>
+            <precondition>The purple block is empty on top.</precondition>
+            <precondition>The purple bowl is empty on top.</precondition>
+            <action>robot.pick_and_place("purple block", "purple bowl")</action>
+            <postcondition>The purple block is placed on top of the purple bowl.</postcondition>
+            <postcondition>The purple bowl is not empty on top.</postcondition>
+        </apack>
+        <apack>
+            <precondition>The yellow block is empty on top.</precondition>
+            <precondition>The right side is empty on top.</precondition>
+            <action>robot.pick_and_place("yellow block", "right side")</action>
+            <postcondition>The yellow block is placed on top of the right side.</postcondition>
+            <postcondition>The right side is not empty on top.</postcondition>
+        </apack>
+        <apack>
+            <precondition>The blue block is empty on top.</precondition>
+            <precondition>The yellow block is empty on top.</precondition>
+            <action>robot.pick_and_place("blue block", "yellow block")</action>
+            <postcondition>The blue block is placed on top of the yellow block.</postcondition>
+            <postcondition>The yellow block is not empty on top.</postcondition>
+        </apack>
+        <apack>
+            <precondition>The brown block is empty on top.</precondition>
+            <precondition>The blue block is empty on top.</precondition>
+            <action>robot.pick_and_place("brown block", "blue block")</action>
+            <postcondition>The brown block is placed on top of the blue block.</postcondition>
+            <postcondition>The blue block is not empty on top.</postcondition>
+        </apack>
+    </sequence>
+</plan>

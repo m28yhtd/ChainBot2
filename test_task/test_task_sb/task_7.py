@@ -1,0 +1,3 @@
+found_objects = "objects = ['blue block', 'red block', 'purple block', 'brown block', 'yellow block']"
+initial_state = "The blue block is placed on top of the red block.\nThe blue block is empty on top.\nThe red block is placed on top of the table.\nThe red block is not empty on top.\nThe brown block is placed on top of the table.\nThe brown block is not empty on top.\nThe yellow block is placed on top of the brown block.\nThe yellow block is empty on top.\nThe purple block is placed on top of the table.\nThe purple block is empty on top."
+initial_prompt = "Stack the blocks bottom-to-top as blue block, purple block, brown block, red block, yellow block."

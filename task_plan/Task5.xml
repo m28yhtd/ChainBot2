@@ -1,0 +1,32 @@
+<plan>
+    <sequence>
+        <apack>
+            <precondition>The red block is empty on top.</precondition>
+            <precondition>The bottom side is empty on top.</precondition>
+            <action>robot.pick_and_place("red block", "bottom side")</action>
+            <postcondition>The red block is placed on top of the bottom side.</postcondition>
+            <postcondition>The bottom side is not empty on top.</postcondition>
+        </apack>
+        <apack>
+            <precondition>The purple block is empty on top.</precondition>
+            <precondition>The bottom right corner is empty on top.</precondition>
+            <action>robot.pick_and_place("purple block", "bottom right corner")</action>
+            <postcondition>The purple block is placed on top of the bottom right corner.</postcondition>
+            <postcondition>The bottom right corner is not empty on top.</postcondition>
+        </apack>
+        <apack>
+            <precondition>The yellow block is empty on top.</precondition>
+            <precondition>The purple block is empty on top.</precondition>
+            <action>robot.pick_and_place("yellow block", "purple block")</action>
+            <postcondition>The yellow block is placed on top of the purple block.</postcondition>
+            <postcondition>The purple block is not empty on top.</postcondition>
+        </apack>
+        <apack>
+            <precondition>The blue block is empty on top.</precondition>
+            <precondition>The red block is empty on top.</precondition>
+            <action>robot.pick_and_place("blue block", "red block")</action>
+            <postcondition>The blue block is placed on top of the red block.</postcondition>
+            <postcondition>The red block is not empty on top.</postcondition>
+        </apack>
+    </sequence>
+</plan>
